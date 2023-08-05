@@ -35,13 +35,13 @@ namespace Crm_Dev.Menu
             form_Aula aula = new form_Aula();
 
 
-                tabControl_Centro.TabPages.Clear();
-                tabAulas.Name = "aulas";
-                tabAulas.Text = "suas aulas estão nesta aba!";
-                tabAulas.Controls.Add(aula);
-                tabControl_Centro.TabPages.Add(tabAulas);
-             
-        
+            tabControl_Centro.TabPages.Clear();
+            tabAulas.Name = "aulas";
+            tabAulas.Text = "suas aulas estão nesta aba!";
+            tabAulas.Controls.Add(aula);
+            tabControl_Centro.TabPages.Add(tabAulas);
+
+
 
 
 
@@ -49,15 +49,15 @@ namespace Crm_Dev.Menu
 
         private void IB_NOTAS_Click(object sender, EventArgs e)
         {
-            
-          
-                tabControl_Centro.TabPages.Clear();
-                TabPage tabNotas = new TabPage();
-                form_Notas notas = new form_Notas();
-                tabNotas.Name = "notas";
-                tabNotas.Text = "suas notas!!";
-                tabNotas.Controls.Add(notas);
-                tabControl_Centro.TabPages.Add(tabNotas);
+
+
+            tabControl_Centro.TabPages.Clear();
+            TabPage tabNotas = new TabPage();
+            form_Notas notas = new form_Notas();
+            tabNotas.Name = "notas";
+            tabNotas.Text = "suas notas!!";
+            tabNotas.Controls.Add(notas);
+            tabControl_Centro.TabPages.Add(tabNotas);
 
 
         }

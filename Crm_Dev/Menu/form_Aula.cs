@@ -24,7 +24,7 @@ namespace Crm_Dev.Menu
         {
             Form_PegarDadosAula tela = new Form_PegarDadosAula(this);
             tela.ShowDialog();
-            
+
         }
 
         private void IC_DELETAR_Click(object sender, EventArgs e)

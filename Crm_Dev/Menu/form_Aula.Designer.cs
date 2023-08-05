@@ -46,9 +46,9 @@
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
             listView1.HeaderStyle = ColumnHeaderStyle.Nonclickable;
-            listView1.Location = new Point(30, 0);
+            listView1.Location = new Point(79, 12);
             listView1.Name = "listView1";
-            listView1.Size = new Size(1406, 658);
+            listView1.Size = new Size(887, 503);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -83,7 +83,7 @@
             IC_ADICIONAR.IconColor = Color.Black;
             IC_ADICIONAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
             IC_ADICIONAR.ImageAlign = ContentAlignment.MiddleLeft;
-            IC_ADICIONAR.Location = new Point(30, 686);
+            IC_ADICIONAR.Location = new Point(79, 558);
             IC_ADICIONAR.Name = "IC_ADICIONAR";
             IC_ADICIONAR.Size = new Size(215, 77);
             IC_ADICIONAR.TabIndex = 1;
@@ -93,6 +93,7 @@
             // 
             // IC_DELETAR
             // 
+            IC_DELETAR.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             IC_DELETAR.BackColor = Color.HotPink;
             IC_DELETAR.FlatStyle = FlatStyle.Flat;
             IC_DELETAR.Font = new Font("Stencil", 13F, FontStyle.Bold, GraphicsUnit.Point);
@@ -101,7 +102,7 @@
             IC_DELETAR.IconColor = Color.Black;
             IC_DELETAR.IconFont = FontAwesome.Sharp.IconFont.Auto;
             IC_DELETAR.ImageAlign = ContentAlignment.MiddleLeft;
-            IC_DELETAR.Location = new Point(1221, 686);
+            IC_DELETAR.Location = new Point(751, 558);
             IC_DELETAR.Name = "IC_DELETAR";
             IC_DELETAR.Size = new Size(215, 77);
             IC_DELETAR.TabIndex = 2;
@@ -114,14 +115,13 @@
             // 
             AutoScaleMode = AutoScaleMode.Inherit;
             AutoScroll = true;
-            AutoSize = true;
             Controls.Add(IC_DELETAR);
             Controls.Add(IC_ADICIONAR);
             Controls.Add(listView1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = SystemColors.ActiveCaption;
             Name = "form_Aula";
-            Size = new Size(1514, 826);
+            Size = new Size(1048, 638);
             ResumeLayout(false);
         }
 

@@ -26,8 +26,19 @@ namespace Crm_Dev.Menu
             dados.item[1] = textBox2.Text.ToString();
             dados.item[2] = textBox3.Text.ToString();
             dados.item[3] = maskedTextBox4.Text.ToString();
-            dados.listView1.Items.Add(new ListViewItem(dados.item));
-            this.Close();
+            foreach(string i in dados.item)
+            {
+                if(i == "")
+                {
+                    MessageBox.Show("algums campos estão vazios!", "desculpa", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                }
+                else
+                {
+                    dados.listView1.Items.Add(new ListViewItem(dados.item));
+                    this.Close();
+                }
+            }
+            
         }
 
 
@@ -82,6 +93,11 @@ namespace Crm_Dev.Menu
                 }
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -137,7 +137,7 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.BackgroundImage = ADMIN_AULAS.Properties.Resources.UEPB;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(552, 0);
+            pictureBox1.Location = new Point(552, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(280, 272);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -154,6 +154,7 @@
             button2.TabIndex = 11;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Form_PegarDadosAula
             // 
